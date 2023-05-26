@@ -1,0 +1,295 @@
+@font-face {
+	font-family: Stolzl-Thin;
+	src: url(fonts/Stolzl-Thin.otf);
+}
+html {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: black;
+	margin: 0;
+	padding: 0;
+}
+button {
+	display: none;
+}
+nav {
+	flex: 1;
+	margin: 20px 0px 0px -10px;
+}
+hr {
+	margin: 0;
+	border: none;
+	background: white;
+	height: 0.8px;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    margin: -0.5rem 2rem;
+    white-space: nowrap;
+}
+a:hover {
+	color: #999480;
+}
+h2 {
+	display: flex;
+	font-size: 20px;
+	font-family: Stolzl-Thin;
+	cursor: pointer;
+	text-transform: uppercase;
+	margin: 0;
+}
+h2:hover {
+	color: #999480;
+}
+h3 {
+	font-size: 16px;
+	color: #DBD5BE;
+	text-align: justify;
+	font-family: Stolzl-Thin;
+	padding: 0px 160px 0px 160px;
+}
+h4 {
+	font-size: 16px;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	font-family: Stolzl-Thin;
+	margin: 0;
+}
+h4:hover {
+	color: #999480;
+}
+h6 {
+	font-size: 12px;
+	font-family: Stolzl-Thin;
+	margin: 10px 0px 0px 0px;
+	color: #999480;
+	text-align: center;
+	width: 100%;
+}
+.topline {
+	background: black;
+	z-index: 30;
+	top: 0px;
+	position: sticky;
+	width: 100%;
+	height: 65px;
+	display: flex;
+	margin: 0px 0px 0px 0px;
+}
+.nav_container {
+	position: relative;
+	display: inline-block;
+	height: 45px;
+}
+.nav_container:hover .sub-1 {
+	height: 300px;
+	animation: sub 0.5s linear forwards;
+}
+.sub-1 {
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    top: 100%;
+    min-width: 200px;
+    background: black;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+	margin: 0;
+}
+.logo {
+	margin: 12px 0px 0px 200px;
+	cursor: pointer;
+}
+.wrapper {
+	background: black;
+	width: 1000px;
+	height: 100%;
+	margin: auto;
+	box-sizing: border-box;
+}
+.logo-2 {
+	margin: -500px 0px 200px 0px;
+}
+.description-1, .story-1, .game-1, .features-1, .gui, .logo-2 {
+	text-align: center;
+}
+.footer {
+	width: 180px;
+	height: 40px;
+	margin: auto;
+}
+@media screen and (max-width: 770px) {
+	.wrapper {
+		max-width: 100%;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	.topline {
+		display: flex;
+		max-width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.logo {
+		margin: 12px 0px 0px 30px;
+	}
+	nav {
+		display: flex;
+		flex-direction: column;
+		height: 0;
+		padding: 0;
+		overflow: hidden;
+		margin-top: 5px;
+		}
+	nav.open {
+		padding: .5rem;
+		height: auto;
+		}
+	#menu{
+		position: absolute;
+		top: 100%;
+		background: black;
+		width: 100%;
+		margin: 0;
+	}
+	#menu h2 {
+		justify-content: center;
+	}
+	button span {
+		margin-left: 1rem;
+	}
+	button img { 
+		width: 50px;
+		height: 50px;
+		margin: 0px 0px 0px 10px;
+	}
+	#menu a {
+		display: inline-block;
+		text-decoration: none;
+		font-size: 15px;
+		color: white;
+		white-space: nowrap;
+		margin: 5px;
+		background: black;
+	}
+	.nav_container.nav_container {
+		position: relative;
+		display: inline-block;
+		height: auto;
+		text-align: center;
+	}
+	.sub-1 {
+		display: none;
+	}
+}
+@media screen and (max-width: 415px) {
+	.wrapper {
+		max-width: 100%;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	.topline {
+		display: flex;
+		max-width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.logo {
+		margin: 12px 0px 0px 30px;
+	}
+	.logo-2 {
+		margin: -275px 0px 65px 75px;
+		width: 60%;
+		height: 50%;
+	}
+	.footer {
+		display: none;
+	}
+	.wallpaper{
+		margin: 0px 0px 100px 0px;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+	}
+	h3 {
+		padding: 0px 20px 0px 20px;
+	}
+	h6 {
+		display: none;
+	}	
+	nav {
+		display: flex;
+		flex-direction: column;
+		height: 0;
+		padding: 0;
+		overflow: hidden;
+		margin-top: 5px;
+		}
+	nav.open {
+		padding: .5rem;
+		height: auto;
+		}
+	button {
+		background: black;
+		border: none;
+		outline: none;
+		padding: 0;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+	    margin: 0px 0px 0px 0px;
+	}
+	#menu{
+		position: absolute;
+		top: 100%;
+		background: black;
+		width: 100%;
+		margin: 0;
+	}
+	#menu h2 {
+		justify-content: center;
+	}
+	button span {
+		margin-left: 1rem;
+	}
+	button img { 
+		width: 2rem;
+		height: 2rem;
+	}
+	#menu a {
+		display: inline-block;
+		text-decoration: none;
+		font-size: 15px;
+		color: white;
+		white-space: nowrap;
+		margin: 5px;
+		background: black;
+	}
+	.nav_container.nav_container {
+		position: relative;
+		display: inline-block;
+		height: auto;
+		text-align: center;
+	}
+	.sub-1 {
+		display: none;
+	}
+}
+@keyframes sub {
+	0% {
+		height: 0%;
+	}
+	100% {
+		height: 170px;
+	}
+}
